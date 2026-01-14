@@ -83,10 +83,10 @@ export default function InsightsSection() {
               </li>
             </ul>
 
-           {/* RSVP */}
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <div className="flex h-[81px] w-[606px] bg-[#E7E7E733]/20 flex-1 items-center gap-3 rounded-lg border border-gray-300 px-4">
-                <MdOutlineEmail size={26} color="#4343434A/29"/>
+            {/* RSVP */}
+            <div className="mt-10 flex flex-col max-w-[700px] gap-4 sm:flex-row">
+              <div className="flex h-[81px] flex-1 bg-[#E7E7E733]/20 items-center gap-3 rounded-[8px] border border-gray-300 px-4">
+                <MdOutlineEmail size={26} color="#2727274a" />
                 <input
                   type="email"
                   placeholder="Enter your work email to confirm your attendance"
@@ -113,7 +113,6 @@ export default function InsightsSection() {
             </div>
           </div>
         </div>
-         
       </div>
     </section>
   );

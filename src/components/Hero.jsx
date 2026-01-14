@@ -5,51 +5,77 @@ import { MdOutlineCalendarToday, MdOutlineLocationOn } from "react-icons/md";
 
 export default function Hero() {
   return (
-   <section className="min-h-screen hero-bg relative text-white">
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
+    <section className="relative lg:min-h-screen text-white">
+      
+      {/* MOBILE BACKGROUND */}
+      <div className="sm-hero-bg absolute inset-0 block lg:hidden" />
 
-      {/* Content */}
-      <div className="relative z-10 min-h-screen max-w-7xl mx-auto px-6 flex items-center">
-        <div className="max-w-xl">
-          {/* Logo */}
+      {/* DESKTOP BACKGROUND */}
+      <div className="hero-bg absolute inset-0 hidden lg:block" />
+
+      {/* CONTENT */}
+      <div
+        className="
+          relative z-10
+          lg:min-h-screen
+          max-w-7xl mx-auto
+          px-6
+          flex
+          items-start
+          pt-10
+          pb-10
+          lg:pt-0
+          lg:items-center
+        "
+      >
+        <div>
+          {/* LOGO */}
           <Image
             src="/logo.png"
             alt="Simplilearn"
             width={280}
             height={86}
-            className="mb-6"
+            className="mb-6 w-[150px] lg:w-[280px] lg:h-[86px]"
           />
 
-          {/* Badge */}
-          <div className="flex items-center gap-3 mb-5">
-            <span className="bg-cyan-400 text-black px-3 py-1 text-xs font-semibold rounded">
+          {/* BADGE */}
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <span className="text-[14px] lg:text-[25px] font-[700] bg-[#00FFFF] text-[#25286A] px-3 py-1 rounded-[6px]">
               Invite-Only
             </span>
-            <span className="text-sm text-cyan-300">
+
+            <span className="text-[16px] lg:text-[24px] font-[700] text-[#00FFFF]">
               An Executive Roundtable – Launch
             </span>
           </div>
 
-          {/* Heading */}
-          <h1 className="text-[42px] leading-tight font-bold text-[#F5B33D]">
-            The Skills That Matter Next:
-            <br />
-            Preparing Your Workforce
-            <br />
-            & Leaders for the AI Era
-          </h1>
+          {/* HEADING */}
+          <div className="text-[#F5B33D] leading-tight">
+            <p className="text-[26px] lg:text-[46px] font-[900]">
+              Skills That Matter Next:
+            </p>
+            <p className="text-[22px] lg:text-[46px] font-[700]">
+              Preparing Your Workforce
+            </p>
+            <p className="text-[22px] lg:text-[46px] font-[700]">
+              Leaders for the AI Era
+            </p>
+          </div>
 
-          {/* Meta */}
-          <div className="mt-5 space-y-2 text-sm">
+          {/* META */}
+          <div className="mt-6 space-y-2">
             <p className="flex items-center gap-2">
-              <MdOutlineCalendarToday />
-              <span>February 20, 2026</span>
+              <MdOutlineCalendarToday size={22} />
+              <span className="text-[16px] lg:text-[30px] font-[900]">
+                February 20, 2026
+              </span>
             </p>
 
             <p className="flex items-center gap-2">
-              <MdOutlineLocationOn />
-              <span>Chamberlain’s Steak & Fish House, Dallas</span>
+              <MdOutlineLocationOn size={22} />
+              <span className="text-[16px] lg:text-[30px] font-[900]">
+                Chamberlain’s Steak & Fish House, Dallas
+              </span>
             </p>
           </div>
         </div>

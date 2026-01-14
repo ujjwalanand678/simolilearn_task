@@ -22,15 +22,31 @@ body {
     "Segoe UI", Roboto, sans-serif;
 }
 .hero-bg {
-  background-image: url("/hero.jpg");
+  background-image: url("/hero.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sm-hero-bg {
+  background-image: url("/hero.png");
+  background-size: 430px 572px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .speaker-bg {
   background-image: url("/speaker.png");
-  background-size: 1240px 224px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-bg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/footer.png");
+  background-size: cover;
+  
   background-position: center;
   background-repeat: no-repeat;
 }
