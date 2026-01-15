@@ -41,8 +41,8 @@ export default function Hero() {
             />
 
             {/* BADGE */}
-            <div className="flex flex-wrap items-center gap-3 mb-4">
-              <span className="text-[14px] lg:text-[25px] font-[700] bg-[#00FFFF] text-[#25286A] px-3 py-1 rounded-[6px]">
+            <div className="flex flex-col lg:items-center lg:flex-row gap-3 mb-4">
+              <span className="text-center  text-[14px] w-[110px] h-[36px] lg:w-[174px] lg:h-[56px] lg:text-[25px] font-[700] bg-[#00FFFF] text-[#25286A] px-3 py-2 rounded-[6px]">
                 Invite-Only
               </span>
 
@@ -51,17 +51,22 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* HEADING */}
-            <div className="text-[#F5B33D] leading-tight">
-              <p className="text-[26px] lg:text-[46px] font-[900]">
-                Skills That Matter Next:
+            {/* MOBILE HEADING */}
+            <div className="block lg:hidden text-[#F5B33D] leading-tight px-4">
+              <p className="text-[26px] font-[900]">The Skills</p>
+              <p className="text-[26px] font-[900]">That Matter Next:</p>
+              <p className="text-[22px] font-[700]">Preparing Your</p>
+              <p className="text-[22px] font-[700]">Workforce & Leaders</p>
+              <p className="text-[22px] font-[700]">for the AI Era</p>
+            </div>
+
+            {/* DESKTOP HEADING */}
+            <div className="hidden lg:block text-[#F5B33D] leading-tight">
+              <p className="text-[46px] font-[900]">
+                The Skills That Matter Next:
               </p>
-              <p className="text-[22px] lg:text-[46px] font-[700]">
-                Preparing Your Workforce
-              </p>
-              <p className="text-[22px] lg:text-[46px] font-[700]">
-                Leaders for the AI Era
-              </p>
+              <p className="text-[46px] font-[700]">Preparing Your Workforce</p>
+              <p className="text-[46px] font-[700]">& Leaders for the AI Era</p>
             </div>
 
             {/* META */}

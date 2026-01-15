@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="footer-bg min-h-[317px] lg:min-h-[475px] text-white flex items-center">
       <div className="max-w-7xl mx-auto px-6 w-full">
-        <p className="mb-6 text-[19px] lg:text-[30px] font-[900] text-white">
+        <p className="mb-6 mt-12 text-[19px] lg:text-[30px] font-[900] text-white">
           Space is limited.
         </p>
 
@@ -15,7 +15,7 @@ export default function Footer() {
           className="mt-10 flex flex-col lg:flex-row gap-4"
         >
           <div className="h-[45px] w-[389px] flex lg:h-[81px] lg:w-[606px] bg-[#E7E7E7E5]/90 items-center gap-3 rounded-lg border border-gray-300 px-4">
-            <MdOutlineEmail size={26} color="#434343" />
+            <MdOutlineEmail size={33} color="#434343d1" />
             <input
               type="email"
               name="email"
@@ -33,7 +33,7 @@ export default function Footer() {
           </button>
         </form>
 
-        <div className="flex flex-col mt-11 lg:grid lg:grid-cols-2 lg:mt-30 text-[13px] lg:text-[20px] font-[500] lg:items-center ">
+        <div className="flex flex-col mt-11 lg:grid lg:grid-cols-2 lg:mt-40 text-[13px] lg:text-[20px] font-[500] lg:items-center ">
           <div>
             <Image
               src="/logo.png"

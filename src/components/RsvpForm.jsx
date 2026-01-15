@@ -11,7 +11,7 @@ export default function RsvpForm() {
     >
       <div className="mt-10 flex flex-col lg:flex-row gap-4">
         <div className="h-[45px] w-[389px] flex lg:h-[81px] lg:w-[606px] bg-[#E7E7E733] items-center gap-3 rounded-lg border border-gray-300 px-4">
-          <MdOutlineEmail size={26} color="gray" />
+          <MdOutlineEmail size={33} color="#b5b5b5" />
           <input
             type="email"
             name="email"
