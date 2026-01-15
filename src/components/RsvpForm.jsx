@@ -6,14 +6,14 @@ export default function RsvpForm() {
   return (
     <div
       className="
-        relative lg:left-10 w-full py-10
+        flex justify-start  w-full py-10
         bg-transparent
         md:bg-gradient-to-b md:from-gray-100 md:via-gray-200 md:to-gray-400
       "
     >
       <div
         className="
-          mx-auto max-w-4xl px-4
+          mx-auto w-[430px] lg:max-w-4xl px-4
           flex flex-col gap-4
           md:flex-row md:items-center md:gap-6
         "
@@ -22,15 +22,15 @@ export default function RsvpForm() {
         <div
           className="
             flex items-center gap-3
-            rounded-[3px] border border-gray-300 bg-gray-200 px-4 text-gray-700
+            rounded-[3px] border border-gray-300 bg-gray-200 px-3 text-gray-700
           "
         >
-          <MdOutlineMail className="text-xl text-gray-500" />
+          <MdOutlineMail className="text-[33px] text-gray-500" />
           <input
             type="email"
             required
             placeholder="Enter your work email to confirm your attendance"
-            className="w-[389px] h-[45px] bg-transparent text-sm outline-none placeholder-gray-500"
+            className="w-[389px] h-[45px] lg:w-[606px] lg:h-[81px] bg-transparent text-[20px] outline-none placeholder-gray-500"
           />
         </div>
 

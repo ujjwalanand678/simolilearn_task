@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="sm-hero-bg absolute inset-0 block lg:hidden" />
 
       {/* DESKTOP BACKGROUND */}
-      <div className="hero-bg absolute inset-0 hidden lg:block" />
+      <div className="hero-bg absolute inset-0 hidden md:block" />
 
       {/* CONTENT */}
       <div
