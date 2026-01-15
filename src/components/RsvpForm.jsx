@@ -4,18 +4,33 @@ import { MdOutlineMail } from "react-icons/md";
 
 export default function RsvpForm() {
   return (
-    
-    <div className="relative left-10 w-full bg-gradient-to-b from-gray-100 via-gray-200 to-gray-400 py-10 ">
-      <div className="mx-auto flex max-w-4xl items-center gap-6 px-4">
-        
+    <div
+      className="
+        relative lg:left-10 w-full py-10
+        bg-transparent
+        md:bg-gradient-to-b md:from-gray-100 md:via-gray-200 md:to-gray-400
+      "
+    >
+      <div
+        className="
+          mx-auto max-w-4xl px-4
+          flex flex-col gap-4
+          md:flex-row md:items-center md:gap-6
+        "
+      >
         {/* Email input */}
-        <div className="flex h-14 flex-1 items-center gap-3 rounded-lg border border-gray-300 bg-gray-200 px-4 text-gray-700">
+        <div
+          className="
+            flex items-center gap-3
+            rounded-[3px] border border-gray-300 bg-gray-200 px-4 text-gray-700
+          "
+        >
           <MdOutlineMail className="text-xl text-gray-500" />
           <input
             type="email"
             required
             placeholder="Enter your work email to confirm your attendance"
-            className="w-full bg-transparent text-sm outline-none placeholder-gray-500"
+            className="w-[389px] h-[45px] bg-transparent text-sm outline-none placeholder-gray-500"
           />
         </div>
 
@@ -23,7 +38,8 @@ export default function RsvpForm() {
         <button
           type="submit"
           className="
-            h-14 rounded-lg px-10 text-lg font-semibold text-white
+            h-[45px] w-[139px] md:w-auto
+            rounded-[5px] px-2 text-[15px] font-[700] text-white
             bg-gradient-to-br from-[#F5B33D] to-[#F59E0B]
             shadow-md hover:shadow-lg transition
           "

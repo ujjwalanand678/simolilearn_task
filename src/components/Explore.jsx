@@ -1,12 +1,17 @@
 import {
-  FiClock,
+  
   FiGrid,
   FiBarChart2,
   FiShield,
   FiGitBranch,
   FiSend,
 } from "react-icons/fi";
-
+import { FaClockRotateLeft } from "react-icons/fa6";
+import { FaNetworkWired } from "react-icons/fa";
+import { MdInsertChartOutlined, MdOutlineAnalytics, MdOutlineRocketLaunch } from "react-icons/md";
+import { HiOutlineChartSquareBar } from "react-icons/hi";
+import { LuShieldCheck } from "react-icons/lu";
+import { TbMessage2Share } from "react-icons/tb";
 export default function Explore() {
   return (
     <section className="mt-20 bg-[#CDDCFB80] py-20">
@@ -19,7 +24,7 @@ export default function Explore() {
           {/* Card 1 */}
           <div className="rounded-xl bg-white p-6 shadow-sm">
             <div className="mb-6 flex items-center gap-3 text-[#1E40FF]">
-              <FiClock size={30} />
+              <FaClockRotateLeft size={30} />
               <h3 className="text-[24px] font-[700] text-black">
                 Skills Decay
               </h3>
@@ -33,7 +38,7 @@ export default function Explore() {
           {/* Card 2 */}
           <div className="rounded-xl bg-white p-6 shadow-sm">
             <div className="mb-6 flex items-center gap-3 text-[#1E40FF]">
-              <FiGrid size={30} />
+              <FaNetworkWired size={32} />
               <h3 className="text-[24px] font-[700] text-black">
                 Manager Role Shift
               </h3>
@@ -47,7 +52,7 @@ export default function Explore() {
           {/* Card 3 */}
           <div className="rounded-xl bg-white p-6 shadow-sm">
             <div className="mb-6 flex items-center gap-3 text-[#1E40FF]">
-              <FiBarChart2 size={30} />
+              <MdOutlineAnalytics  size={32} />
               <h3 className="text-[24px] font-[700] text-black">
                 Leaders + AI Co-Pilots
               </h3>
@@ -61,7 +66,7 @@ export default function Explore() {
           {/* Card 4 */}
           <div className="rounded-xl bg-white p-6 shadow-sm">
             <div className="mb-6 flex items-center gap-3 text-[#1E40FF]">
-              <FiShield size={30} />
+              <LuShieldCheck  size={32} />
               <h3 className="text-[24px] font-[700] text-black">
                 Frontline Capability
               </h3>
@@ -75,7 +80,7 @@ export default function Explore() {
           {/* Card 5 */}
           <div className="rounded-xl bg-white p-6 shadow-sm">
             <div className="mb-6 flex items-center gap-3 text-[#1E40FF]">
-              <FiGitBranch size={30} />
+              <TbMessage2Share  size={32} />
               <h3 className="text-[24px] font-[700] text-black">
                 Core Human Capabilities
               </h3>
@@ -89,7 +94,7 @@ export default function Explore() {
           {/* Card 6 */}
           <div className="rounded-xl bg-white p-6 shadow-sm">
             <div className="mb-6 flex items-center gap-3 text-[#1E40FF]">
-              <FiSend size={30} />
+              <MdOutlineRocketLaunch size={32} />
               <h3 className="text-[24px] font-[700] text-black">
                 Winning Organizations
               </h3>
