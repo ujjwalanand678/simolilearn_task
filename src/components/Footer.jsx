@@ -3,29 +3,29 @@ import { MdOutlineEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="footer-bg  min-h-[475px] text-white flex items-center">
+    <footer className="footer-bg min-h-[317px] lg:min-h-[475px] text-white flex items-center">
    
       <div className="max-w-7xl mx-auto px-6 w-full">
-        <p className="mb-6 text-[30px] font-[900] text-white">
+        <p className="mb-6 text-[19px] lg:text-[30px] font-[900] text-white">
           Space is limited.
         </p>
 
-        <div className="mt-10 flex  gap-4">
-          <div className="flex h-[81px] w-[606px] bg-[#E7E7E7E5]/90 flex-1 items-center gap-3 rounded-lg border border-gray-300 px-4">
+        <div className="mt-10 flex flex-col lg:flex-row  gap-4">
+          <div className="h-[45px] w-[389px] flex lg:h-[81px] lg:w-[606px] bg-[#E7E7E7E5]/90 items-center gap-3 rounded-lg border border-gray-300 px-4">
             <MdOutlineEmail size={26} color="##434343B2/70" />
             <input
               type="email"
               placeholder="Enter your work email to confirm your attendance"
-              className="w-full text-[20px] text-black font-[400] outline-none"
+              className="w-full text-[13px] lg:text-[20px] text-black font-[400] outline-none"
             />
           </div>
 
-          <button className="h-[81px] w-[251px] rounded-[8px] bg-[#F5AB40]/90 px-8 text-[29px] font-[700] text-white">
+          <button className="h-[45px] w-[139px] text-[15px] lg:h-[81px] lg:w-[251px] rounded-[8px] bg-[#F5AB40]/90 px-8 lg:text-[29px] font-[700] text-white">
             RSVP Now
           </button>
         </div>
 
-        <div className="grid grid-cols-2 mt-30 text-[20px] font-[500] items-center ">
+        <div className="flex flex-col mt-11 lg:grid lg:grid-cols-2 lg:mt-30 text-[13px] lg:text-[20px] font-[500] lg:items-center ">
           <div>
             {" "}
             <Image
@@ -33,7 +33,7 @@ export default function Footer() {
               alt="Simplilearn"
               width={280}
               height={86}
-              className="mb-6"
+              className="mb-2 lg:mb-6 w-[150px] h-[46px] lg:w-[280px] lg:h-[86px]"
             />
           </div>
           <div>© 2009–2025 Simplilearn Solutions. All Rights Reserved.</div>
