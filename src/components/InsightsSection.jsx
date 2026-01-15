@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MdOutlineEmail } from "react-icons/md";
+import { submitRsvp } from "@/actions/submitRsvp";
 
 export default function InsightsSection() {
   return (
@@ -95,21 +96,28 @@ export default function InsightsSection() {
             </ul>
 
             {/* RSVP */}
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row ">
-              <div className="flex h-[45px] w-[389px] lg:w-[606px] lg:h-[81px] bg-[ #E7E7E733] items-center gap-3 rounded-[3px] lg:rounded-[8px] border border-gray-300 px-4">
+            <form
+              action={submitRsvp}
+              className="mt-10 flex flex-col gap-4 sm:flex-row"
+            >
+              <div className="flex h-[45px] w-[389px] lg:w-[606px] lg:h-[81px] bg-[#E7E7E733] items-center gap-3 rounded-[3px] lg:rounded-[8px] border border-gray-300 px-4">
                 <MdOutlineEmail size={30} color="#2727274a" />
                 <input
                   type="email"
+                  name="email"
+                  required
                   placeholder="Enter your work email to confirm your attendance"
-                  className="w-full text-[13px] md:text-[20px]  outline-none"
-                 
+                  className="w-full text-[13px] md:text-[20px] outline-none"
                 />
               </div>
 
-              <button className="h-[45px] px-8 text-[15px] w-[139px] lg:h-[81px] lg:w-[251px] rounded-[5px] bg-[#F5AB40]  lg:text-[29px] font-[700] text-white cursor-pointer">
+              <button
+                type="submit"
+                className="cursor-pointer h-[45px] px-8 text-[15px] w-[139px] lg:h-[81px] lg:w-[251px] rounded-[5px] bg-[#F5AB40] lg:text-[29px] font-[700] text-white"
+              >
                 RSVP Now
               </button>
-            </div>
+            </form>
           </div>
 
           {/* RIGHT IMAGE (DESKTOP ONLY – UNCHANGED) */}

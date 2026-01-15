@@ -8,7 +8,7 @@ export default function Agenda() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-white px-6 pt-10 pb-12 rounded-[8px] shadow-sm  ">
+          <div className="bg-white px-6 pt-10 pb-12 rounded-[8px] shadow-lg ">
             <h3 className=" text-[19px] lg:h-[95px] lg:text-[24px] font-[900] text-[#1D4DF4] mb-8">
               Welcome & Opening
             </h3>
@@ -23,7 +23,7 @@ export default function Agenda() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white px-5 pt-10 pb-12 rounded-[8px] shadow-sm  ">
+          <div className="bg-white px-5 pt-10 pb-12 rounded-[8px] shadow-lg ">
             <h3 className="text-[19px] lg:h-[95px] lg:text-[24px] font-[900] text-[#1D4DF4] mb-8">
               Keynote: <br />
               What Enterprise Leaders Are Seeing on the Ground
@@ -40,7 +40,7 @@ export default function Agenda() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white px-7 pt-10 pb-12 rounded-[8px] shadow-sm  ">
+          <div className="bg-white px-7 pt-10 pb-12 rounded-[8px] shadow-lg  ">
             <h3 className="text-[19px] lg:h-[95px] lg:text-[24px] font-[900] text-[#1D4DF4] mb-8">
               Lunch & Executive Conversation
             </h3>

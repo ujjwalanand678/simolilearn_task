@@ -1,52 +1,33 @@
 "use client";
 
-import { MdOutlineMail } from "react-icons/md";
+import { MdOutlineEmail } from "react-icons/md";
+import { submitRsvp } from "@/actions/submitRsvp";
 
 export default function RsvpForm() {
   return (
-    <div
-      className="
-        flex justify-start  w-full py-10
-        bg-transparent
-        md:bg-gradient-to-b md:from-gray-100 md:via-gray-200 md:to-gray-400
-      "
+    <form
+      action={submitRsvp}
+      className="mx-7 pb-5 lg:mx-20 lg:py-10"
     >
-      <div
-        className="
-          mx-auto w-[430px] lg:max-w-4xl px-4
-          flex flex-col gap-4
-          md:flex-row md:items-center md:gap-6
-        "
-      >
-        {/* Email input */}
-        <div
-          className="
-            flex items-center gap-3
-            rounded-[3px] border border-gray-300 bg-gray-200 px-3 text-gray-700
-          "
-        >
-          <MdOutlineMail className="text-[33px] text-gray-500" />
+      <div className="mt-10 flex flex-col lg:flex-row gap-4">
+        <div className="h-[45px] w-[389px] flex lg:h-[81px] lg:w-[606px] bg-[#E7E7E733] items-center gap-3 rounded-lg border border-gray-300 px-4">
+          <MdOutlineEmail size={26} color="gray" />
           <input
             type="email"
+            name="email"
             required
             placeholder="Enter your work email to confirm your attendance"
-            className="w-[389px] h-[45px] lg:w-[606px] lg:h-[81px] bg-transparent text-[20px] outline-none placeholder-gray-500"
+            className="w-full text-[13px] lg:text-[20px] text-black font-[400] outline-none"
           />
         </div>
 
-        {/* Button */}
         <button
           type="submit"
-          className="
-            h-[45px] w-[139px] md:w-auto
-            rounded-[5px] px-2 text-[15px] font-[700] text-white
-            bg-gradient-to-br from-[#F5B33D] to-[#F59E0B]
-            shadow-md hover:shadow-lg transition
-          "
+          className="h-[45px] w-[139px] text-[15px] lg:h-[81px] lg:w-[251px] rounded-[8px] bg-[#F5AB40]/90 px-8 lg:text-[29px] font-[700] text-white"
         >
           RSVP Now
         </button>
       </div>
-    </div>
+    </form>
   );
 }

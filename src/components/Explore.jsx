@@ -6,7 +6,7 @@ import { LuShieldCheck } from "react-icons/lu";
 import { TbMessage2Share } from "react-icons/tb";
 export default function Explore() {
   return (
-    <section className="mt-5 lg:mt-20 bg-[#CDDCFB80] py-8 lg:py-20">
+    <section className="mt-5 lg:mt-20 bg-[#CDDCFB80] py-8 lg:pt-12 lg:pb-14">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-[24px] lg:text-[40px] font-[900] text-[#F5AB40] mb-3">
           What We’ll Explore
